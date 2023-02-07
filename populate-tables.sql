@@ -2,7 +2,10 @@ INSERT INTO contact(ContactID, Name)
 VALUES
 (900001, 'Rachael'),
 (900002, 'Ross'),
-(900003, 'Monica');
+(900003, 'Monica'),
+(900004, 'Chandler'),
+(900005, 'Phoebe'),
+(900006, 'Joey');
 
 INSERT INTO phone(PhoneNumber, Contact, Type)
 VALUES
