@@ -1,8 +1,9 @@
 SELECT State, count(State) FROM registration WHERE myear < 1990 GROUP BY State;
 SELECT Make, count(Make) FROM registration group by Make Order BY count(Make) DESC limit 10;
-
-
-
+SELECT count(county) from registration where Electrification  = 'BEV (Battery Electric Vehicle)';
+SELECT PaymentType, count(make) FROM registration group by PaymentType ORDER BY count(make) DESC;
+SELECT TransactionChannel, count(make) FROM registration group by TransactionChannel ORDER BY count(make) DESC;
+SELECT color from registration where color is not NULL group by color;
 
 --what is the model oldest year represented in the database? newest?
 --Select Myear FROM registration Order BY Myear ASC limit 1; 
